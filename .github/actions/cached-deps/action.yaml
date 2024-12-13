@@ -2,7 +2,7 @@ name: "Get & cache Dependencies"
 description: "get the dependencies and cache them"
 inputs:
   caching:
-    description: "Whether to cache or not"
+    description: "Whether to cache or not ok1"
     required: false
     default: 'true'
 runs:

@@ -1,0 +1,19 @@
+name: 'Deployment eith with Docker'
+description: 'Deploy static website with S3'
+inputs:
+  bucket:
+    description: "The S3 bucket name"
+    required: true
+  bucket-region:
+    description: "The region of s3 bucket"
+    required: false
+    default: 'us-east-1'
+  dist-folder:
+    description: "The folder containing  s3 files"
+    required: true
+outputs:
+  website-url:
+    description: "The url of the deployed website"
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

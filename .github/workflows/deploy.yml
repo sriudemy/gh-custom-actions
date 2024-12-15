@@ -61,13 +61,13 @@ jobs:
         with:
           name: dist-files
           path: ./dist
-      - name: Output contents
+      - name: Output content
         run: ls
 
       - name: Get AWS Permisiions
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: arn:aws:iam::586794475877:role/githubdemo
+          role-to-assume: arn:aws:iam::586794475877:role/githubdemo1
           aws-region: us-east-1
       - name: Deploy site
         id: deploy
